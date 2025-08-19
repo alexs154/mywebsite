@@ -33,3 +33,16 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+main {
+  margin-top: 10vh; /* same as header height */
+  padding: 20px;
+}
+
+#home {
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
