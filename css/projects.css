@@ -1,6 +1,6 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
   padding: 2rem;
 }
@@ -22,7 +22,7 @@
 .gallery img {
   width: 100%;
   display: block;
-  height: 500px;
+  height: 700px;
   object-fit: cover;
 }
 

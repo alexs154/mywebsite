@@ -114,3 +114,24 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+.download-button {
+  position: fixed;
+  top: 120px;           /* slightly below the header */
+  right: 50px;
+  z-index: 1100;       /* above header */
+  padding: 10px 20px;
+  background-color: #494c49;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+
+.download-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
