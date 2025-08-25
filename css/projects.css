@@ -37,3 +37,102 @@
   text-align: center;
   font-weight: bold;
 }
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+main.project-page {
+    padding-top: 100px; /* slightly more than header height */
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Project section styling */
+.project-section {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-section h1, .project-section h2 {
+    color: #00539C;
+    margin-top: 0;
+}
+
+.project-summary {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Images */
+.project-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Lists */
+.project-section ul {
+    padding-left: 1.2rem;
+}
+
+.project-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Technical specifications */
+.tech-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.spec {
+    background-color: #e0f0ff;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 200px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.spec:hover {
+    background-color: #cce6ff;
+}
+
+/* Footer */
+.footer-bar {
+    text-align: center;
+    padding: 1rem;
+    background-color: #00539C;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .tech-specs {
+        flex-direction: column;
+    }
+}
