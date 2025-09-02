@@ -121,15 +121,6 @@ main.project-page {
     background-color: #cce6ff;
 }
 
-/* Footer */
-.footer-bar {
-    text-align: center;
-    padding: 1rem;
-    background-color: #00539C;
-    color: white;
-    font-size: 0.9rem;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     .tech-specs {
