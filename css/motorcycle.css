@@ -31,34 +31,6 @@ main {
     padding: 0 1rem;
 }
 
-/* Flex container for project content */
-.project-content {
-    display: flex;
-    flex-wrap: wrap; /* wraps on smaller screens */
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.project-text {
-    flex: 1; /* takes remaining space */
-    min-width: 280px; /* ensures it doesn’t get too small */
-}
-
-.project-right {
-    flex : 1;
-    display: flex;
-    flex-direction: column; /* stack image and video vertically */
-    gap: 1rem;              /* space between image and video */
-}
-
-.project-image, 
-.project-right video {
-    width: 100%;  /* fill the column */
-    height: auto; /* maintain aspect ratio */
-    border-radius: 12px;
-    object-fit: cover;
-}
-
 h2 {
     font-size: 1.8rem;
     margin-top: 2rem;
