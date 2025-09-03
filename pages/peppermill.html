@@ -5,9 +5,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Engineering Portfolio</title>
+
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/projects.css">
-        <link rel="stylesheet" href="../css/individualproject.css">
+        <link rel="stylesheet" href="../css/motorcycle.css">
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </head>
     <body>
 
@@ -21,22 +24,43 @@
         </header>
 
         <main>
-            <h1>Project Title</h1>
+        
+            <div class="project-content">
+                <div class="project-text">
 
-            <img src="project-image.jpg" alt="Project Image" class="project-image">
+                    <h1>Peppermill Design</h1>
 
-            <h2>Overview</h2>
-            <p>This project is about… Explain the purpose, the problem it solves, and the approach you took. Keep it concise and clear.</p>
+                    <h2>Overview</h2>
+                    
+                    <p>
+                    For this project I was contracted to reverse engineer an existing collection of peppermills. I created detailed CAD models of five different mills, 
+                    and then created technical drawings for manufacturing. Through working with a factory in China, I was able to learn about the manufacturing 
+                    process and tolerances needed for mass production. We are currently in the process of manufacturing 10,000 units for sale in the US market.
+                    </p>
 
-            <h2>Technologies Used</h2>
-            <p>HTML, CSS, JavaScript, Python, SolidWorks, or any tools/frameworks used.</p>
+                    <h2>Skilled Used</h2>
+                    <p>Fabrication, Machining, Torque and Precision Measurments, Problem Solving and Diagnostics, SolidWorks</p>
 
-            <h2>Key Features</h2>
-            <p>Highlight 3–5 main features or achievements. Example: responsive design, automation system, interactive charts, etc.</p>
+                    <h2>Key Features</h2>
+                    <p>Highlight 3–5 main features or achievements. Example: responsive design, automation system, interactive charts, etc.</p>
 
-            <h2>Challenges & Learnings</h2>
-            <p>Explain any obstacles you faced and what you learned from them. This shows problem-solving skills.</p>
+                    <h2>Challenges & Learnings</h2>
+                    <p>Explain any obstacles you faced and what you learned from them. This shows problem-solving skills.</p>
 
+                </div>
+                
+                <div class="project-right">
+                    <h2>My CAD Design</h2>
+                    <model-viewer 
+                        src="../images/black_pro_view_-_model_4922_assembly.glb"
+                        alt="3D model of an engine part"
+                        auto-rotate
+                        camera-controls
+                        background-color="#f9f9f9">
+                    </model-viewer>
+                </div>
+
+            </div>
             <a href="projects.html" class="back-link">← Back to Projects</a>
         </main>
 

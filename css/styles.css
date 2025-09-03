@@ -46,6 +46,16 @@ main {
   font-weight: bold;
 }
 
+model-viewer {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
 footer {
   background-color: #1a1a1a;
   color: #fff;
