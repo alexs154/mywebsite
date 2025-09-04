@@ -1,3 +1,17 @@
+.header-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  display: flex;                /* align items in a row */
+  justify-content: space-between; /* space between logo and nav */
+  align-items: center;          /* vertical centering */
+  padding: 10px 20px;           /* spacing inside the bar */
+  box-sizing: border-box; /* include padding in width */        
+  z-index: 1000;                /* on top of other content */
+}
+
 /* Global Styles */
 body {
   font-family: 'Inter', sans-serif;

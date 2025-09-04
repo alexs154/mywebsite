@@ -8,9 +8,7 @@
   justify-content: space-between; /* space between logo and nav */
   align-items: center;          /* vertical centering */
   padding: 10px 20px;           /* spacing inside the bar */
-  box-sizing: border-box; /* include padding in width */
-  background-color: #494c49;       /* dark background */
-  color: white;                 /* text color */
+  box-sizing: border-box; /* include padding in width */        
   z-index: 1000;                /* on top of other content */
 }
 
@@ -20,18 +18,29 @@
 }
 
 .nav-links a {
-  color: white;
+  position: relative; /* needed for ::after positioning */
+  color: rgb(0, 0, 0);
   text-decoration: none;
   margin-left: 30px;
   font-size: 20px;
 }
 
-.nav-links a:last-child {
-  margin-right: 80px;
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* spacing under text */
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.nav-links a.active::after,
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 main {
@@ -46,14 +55,28 @@ main {
   font-weight: bold;
 }
 
-model-viewer {
-  width: 100%;
-  max-width: 800px;
-  height: 500px;
-  margin: auto;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 12px;
+.container {
+  display: flex;         /* enables flexbox */
+  max-width: 1200px;     /* optional: limit total width */
+  margin: 0 auto;        /* center on page */
+  min-height: 80vh;     /* full page height */
+}
+
+.left {
+  flex: 2;               /* takes up 1 part */
+  padding: 20px;
+}
+
+.right {
+  flex: 1;               /* takes up 2 parts (twice as wide as left) */
+  padding: 20px;
+}
+    
+.circle-image {
+  width: 400px;       /* control size */
+  height: 400px;      /* make it square */
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* keeps image from stretching */
 }
 
 footer {

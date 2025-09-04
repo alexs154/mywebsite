@@ -27,3 +27,13 @@
     stroke-width: 2;
     fill: none;
 }
+
+model-viewer {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
