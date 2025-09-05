@@ -38,16 +38,6 @@
   font-weight: bold;
 }
 
-/* General page styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
 main.project-page {
     padding-top: 100px; /* slightly more than header height */
     max-width: 1000px;
