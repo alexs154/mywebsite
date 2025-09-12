@@ -65,12 +65,13 @@ main {
   display: flex;         /* enables flexbox */
   max-width: 1200px;     /* optional: limit total width */
   margin: 0 auto;        /* center on page */
-  min-height: 80vh;     /* full page height */
+  min-height: 70vh;     /* full page height */
 }
 
 .left {
   flex: 2;               /* takes up 1 part */
   padding: 20px;
+  font-size: 24px;
 }
 
 .right {
@@ -83,6 +84,43 @@ main {
   height: 400px;      /* make it square */
   border-radius: 50%; /* makes it circular */
   object-fit: cover;  /* keeps image from stretching */
+}
+
+.btn {
+  margin-top: 60px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #020202; /* professional deep blue */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb; /* slightly lighter blue */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Page fade-out effect */
+.fade-out {
+  animation: fadeOut 0.4s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.98);
+  }
 }
 
 footer {

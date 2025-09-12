@@ -1,3 +1,7 @@
-  document.getElementById("viewBtn").addEventListener("click", () => {
-    window.location.href = "../pages/projects.html"; // your projects page
-  });
+    const button = document.getElementById("viewBtn");
+    button.addEventListener("click", () => {
+      document.body.classList.add("fade-out");
+      setTimeout(() => {
+        window.location.href = "../pages/projects.html"; // replace with your projects page
+      }, 500); // match animation duration
+    });
